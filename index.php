@@ -34,7 +34,7 @@ if(isset($_POST['email']) || isset($_POST['senha'])) {
             header("Location: painel.php");
 
         } else {
-            echo "Falha ao logar! E-mail ou senha incorretos!";
+            header("Location: erro.php");
         }
 
     }
@@ -54,7 +54,7 @@ if(isset($_POST['email']) || isset($_POST['senha'])) {
 <div class="wrapper fadeInDown">
   <div id="formContent">
     <div class="fadeIn first">
-      <img src="https://i.imgur.com/gDDgJTl.png" id="icon" alt="User Icon" />
+      <img src="agency.png" id="icon" alt="User Icon" />
     </div>
     <form action="" method="POST">
         <p>
